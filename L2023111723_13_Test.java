@@ -2,7 +2,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * 测试类：L2023111723_X_Test
+ * 测试类：L2023111723_13_Test
  * 测试用例设计原则：
  * - 等价类划分：将输入划分为有效等价类和无效等价类
  * - 边界值分析：测试数组边界情况
