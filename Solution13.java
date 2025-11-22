@@ -16,17 +16,21 @@
 
 class Solution {
     public void sortColors(int[] nums) {
-        int n = nums.length();
-        int ptr = 0
+        int n = nums.length; // 修正：length是属性，不是方法
+        int ptr = 0; // 修正：缺少分号
+        
+        // 第一次遍历：将所有0移动到数组前端
         for (int i = 0; i < n; ++i) {
-            if (nums(i) == 0) {
+            if (nums[i] == 0) { // 修正：数组访问用[]而不是()
                 int temp = nums[i];
                 nums[i] = nums[ptr];
                 nums[ptr] = temp;
                 ++ptr;
             }
         }
-        for {int i = ptr; i < n; ++i} {
+        
+        // 第二次遍历：将所有1移动到0的后面
+        for (int i = ptr; i < n; ++i) { // 修正：括号应该是()，不是{}
             if (nums[i] == 1) {
                 int temp = nums[i];
                 nums[i] = nums[ptr];
@@ -34,5 +38,6 @@ class Solution {
                 ++ptr;
             }
         }
+        // 剩余的2会自动排在最后
     }
 }
